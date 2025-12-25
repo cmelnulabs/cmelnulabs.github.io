@@ -2,8 +2,41 @@
 // CMELNULABS - Interactive Website Scripts
 // ============================================
 
+// Translations
+const translations = {
+    en: {
+        'page-title': 'cmelnulabs - Educational Projects & Open Source',
+        'nav-about': 'About',
+        'nav-projects': 'Projects',
+        'nav-skills': 'Skills',
+        'nav-contact': 'Contact',
+        'nav-github': 'GitHub',
+        // Add more translations as needed
+    },
+    es: {
+        'page-title': 'cmelnulabs - Proyectos Educativos y Código Abierto',
+        'nav-about': 'Sobre mí',
+        'nav-projects': 'Proyectos',
+        'nav-skills': 'Habilidades',
+        'nav-contact': 'Contacto',
+        'nav-github': 'GitHub',
+        // Add more translations as needed
+    },
+    ca: {
+        'page-title': 'cmelnulabs - Projectes Educatius i Codi Obert',
+        'nav-about': 'Sobre mi',
+        'nav-projects': 'Projectes',
+        'nav-skills': 'Habilitats',
+        'nav-contact': 'Contacte',
+        'nav-github': 'GitHub',
+        // Add more translations as needed
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all features
+    initTheme();
+    initLanguage();
     initTypewriter();
     fetchGitHubStats();
     initSmoothScroll();
@@ -11,6 +44,110 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initScrollAnimations();
 });
+
+// Theme Management
+function initTheme() {
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
+
+    // Load saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    htmlElement.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+}
+
+// Language Management
+function initLanguage() {
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+    const currentLangSpan = document.getElementById('currentLang');
+    const langOptions = document.querySelectorAll('.lang-option');
+
+    // Load saved language or default to English
+    const savedLang = localStorage.getItem('language') || 'en';
+    setLanguage(savedLang);
+
+    // Toggle dropdown
+    langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('active');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('active');
+    });
+
+    // Language selection
+    langOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const lang = option.getAttribute('data-lang');
+            setLanguage(lang);
+            langDropdown.classList.remove('active');
+        });
+    });
+}
+
+function setLanguage(lang) {
+    const currentLangSpan = document.getElementById('currentLang');
+    const langOptions = document.querySelectorAll('.lang-option');
+
+    // Update current language display
+    currentLangSpan.textContent = lang.toUpperCase();
+
+    // Update active state
+    langOptions.forEach(option => {
+        if (option.getAttribute('data-lang') === lang) {
+            option.classList.add('active');
+        } else {
+            option.classList.remove('active');
+        }
+    });
+
+    // Save to localStorage
+    localStorage.setItem('language', lang);
+
+    // Update HTML lang attribute
+    document.documentElement.setAttribute('lang', lang);
+
+    // Translate page
+    translatePage(lang);
+}
+
+function translatePage(lang) {
+    const elements = document.querySelectorAll('[data-i18n]');
+    const translation = translations[lang];
+
+    if (!translation) return;
+
+    elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translation[key]) {
+            if (element.tagName === 'TITLE') {
+                element.textContent = translation[key];
+            } else {
+                element.textContent = translation[key];
+            }
+        }
+    });
+
+    // Handle elements with data-i18n-title for tooltips/titles
+    const titleElements = document.querySelectorAll('[data-i18n-title]');
+    titleElements.forEach(element => {
+        const key = element.getAttribute('data-i18n-title');
+        if (translation[key]) {
+            element.setAttribute('title', translation[key]);
+        }
+    });
+}
 
 // Typewriter Effect
 function initTypewriter() {

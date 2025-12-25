@@ -3,7 +3,7 @@
    Educational & Professional Theme
    ============================================ */
 
-/* CSS Variables */
+/* CSS Variables - Dark Theme (Default) */
 :root {
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
@@ -27,6 +27,27 @@
     --radius-lg: 20px;
     --radius-xl: 28px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --accent-primary: #0284c7;
+    --accent-secondary: #0891b2;
+    --accent-tertiary: #0d9488;
+    --accent-warm: #f59e0b;
+    --gradient-1: linear-gradient(135deg, #0284c7, #0891b2, #0d9488);
+    --gradient-2: linear-gradient(135deg, #0284c7, #0369a1, #075985);
+    --gradient-3: linear-gradient(180deg, transparent, var(--bg-primary));
+    --border-color: rgba(100, 116, 139, 0.2);
+    --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 0 40px rgba(2, 132, 199, 0.2);
+    --success: #16a34a;
 }
 
 /* Reset & Base */
@@ -59,6 +80,17 @@ body {
     height: 100%;
     z-index: -1;
     overflow: hidden;
+}
+
+/* Light theme background adjustments */
+[data-theme="light"] .bg-animation {
+    opacity: 0.3;
+}
+
+[data-theme="light"] .stars,
+[data-theme="light"] .stars2,
+[data-theme="light"] .stars3 {
+    opacity: 0.15;
 }
 
 .stars,
@@ -126,6 +158,10 @@ body {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition);
+}
+
+[data-theme="light"] .navbar {
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .nav-container {
@@ -216,6 +252,131 @@ body {
     background: var(--accent-primary);
     border-color: var(--accent-primary);
     transform: translateY(-2px);
+}
+
+/* Navigation Controls */
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+.theme-toggle .sun-icon,
+.theme-toggle .moon-icon {
+    position: absolute;
+    transition: var(--transition);
+}
+
+[data-theme="dark"] .sun-icon {
+    opacity: 0;
+    transform: rotate(90deg) scale(0);
+}
+
+[data-theme="dark"] .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .moon-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0);
+}
+
+/* Language Selector */
+.language-selector {
+    position: relative;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 8px;
+    min-width: 140px;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--transition);
+    z-index: 100;
+}
+
+.lang-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    width: 100%;
+    padding: 10px 16px;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-option:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.lang-option.active {
+    background: var(--accent-primary);
+    color: white;
 }
 
 .mobile-menu-btn {
@@ -1141,6 +1302,21 @@ body {
     }
 
     .github-btn {
+        display: none;
+    }
+
+    .nav-controls {
+        gap: 8px;
+    }
+
+    .theme-toggle,
+    .lang-btn {
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+    }
+
+    .lang-btn span {
         display: none;
     }
 
