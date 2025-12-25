@@ -147,6 +147,19 @@ body {
     font-size: 1.25rem;
 }
 
+.logo-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-primary);
+    transition: var(--transition);
+}
+
+.logo:hover .logo-avatar {
+    border-color: var(--accent-secondary);
+    transform: scale(1.05);
+}
+
 .logo-icon {
     font-size: 1.5rem;
 }
@@ -1069,6 +1082,11 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 12px;
+}
+
+.footer-logo .logo-avatar {
+    width: 32px;
+    height: 32px;
 }
 
 .footer-text {
