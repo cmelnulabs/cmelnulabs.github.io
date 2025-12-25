@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="ca" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page-title">cmelnulabs - Educational Projects & Open Source</title>
+    <title>cmelnulabs - Projectes per a Curiosos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -24,15 +24,15 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="/ca/" class="logo">
                 <img src="https://github.com/cmelnulabs.png" alt="cmelnulabs avatar" class="logo-avatar">
                 <span class="logo-text">cmelnulabs</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav-about">About</a></li>
-                <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
-                <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
-                <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                <li><a href="#about">Qui sóc</a></li>
+                <li><a href="#projects">Projectes</a></li>
+                <li><a href="#skills">Habilitats</a></li>
+                <li><a href="#contact">Contacte</a></li>
             </ul>
             <div class="nav-controls">
                 <!-- Language Selector -->
@@ -45,16 +45,16 @@
                             <path
                                 d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                         </svg>
-                        <span id="currentLang">EN</span>
+                        <span id="currentLang">CA</span>
                     </button>
                     <div class="lang-dropdown" id="langDropdown">
-                        <a href="/" class="lang-option active">English</a>
+                        <a href="/" class="lang-option">English</a>
                         <a href="/es/" class="lang-option">Español</a>
-                        <a href="/ca/" class="lang-option">Català</a>
+                        <a href="/ca/" class="lang-option active">Català</a>
                     </div>
                 </div>
                 <!-- Theme Toggle -->
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <button class="theme-toggle" id="themeToggle" aria-label="Canviar tema">
                     <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
                         stroke-width="2">
                         <circle cx="12" cy="12" r="5" />
@@ -73,7 +73,7 @@
                     </svg>
                 </button>
             </div>
-            <a href="https://github.com/cmelnulabs" class="github-btn" target="_blank" data-i18n-title="nav-github">
+            <a href="https://github.com/cmelnulabs" class="github-btn" target="_blank">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                     <path
                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -93,40 +93,37 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="pulse"></span>
-                <span data-i18n="hero-badge">Open Source Developer</span>
+                <span>Desenvolupador & Curiós</span>
             </div>
             <h1 class="hero-title">
-                <span data-i18n="hero-title-1">Building</span> <span class="gradient-text"
-                    data-i18n="hero-title-2">Educational</span><br>
-                <span data-i18n="hero-title-3">Projects That</span><br>
+                Creant <span class="gradient-text">Projectes</span><br>
+                Que<br>
                 <span class="typewriter" id="typewriter"></span>
             </h1>
             <p class="hero-subtitle">
-                <span data-i18n="hero-subtitle-1">Creating emulators, compilers, operating systems, and whatever sounds
-                    fun.</span><br>
+                Emuladors, compiladors, sistemes operatius... i el que em vingui de gust.<br>
                 <br>
-                <span data-i18n="hero-subtitle-2">Powered by coffee and vibe coding</span> ☕
+                A base de cafè i ganes de trastegar ☕
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">
-                    <span data-i18n="hero-cta-projects">Explore Projects</span>
+                    <span>Veure projectes</span>
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
-                <a href="https://github.com/cmelnulabs" class="btn btn-secondary" target="_blank"
-                    data-i18n="hero-cta-github">
-                    View GitHub
+                <a href="https://github.com/cmelnulabs" class="btn btn-secondary" target="_blank">
+                    Anar a GitHub
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number" id="repos-count">-</span>
-                    <span class="stat-label" data-i18n="stat-repos">Public Repos</span>
+                    <span class="stat-label">Repositoris</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" id="followers-count">-</span>
-                    <span class="stat-label" data-i18n="stat-followers">Followers</span>
+                    <span class="stat-label">Seguidors</span>
                 </div>
             </div>
         </div>
@@ -136,54 +133,54 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-i18n="about-tag">About Me</span>
-                <h2 data-i18n="about-title">The Developer Behind the Code</h2>
+                <span class="section-tag">Qui sóc</span>
+                <h2>La persona darrere el codi</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro" data-i18n="about-intro">
-                        I'm <strong>Christian</strong>, a developer based in <span class="highlight">Barcelona</span>
-                        who loves diving deep into how computers actually work.
+                    <p class="about-intro">
+                        Em dic <strong>Christian</strong>, visc a <span class="highlight">Barcelona</span>
+                        i m'apassiona entendre com funcionen les coses per dins.
                     </p>
-                    <p data-i18n="about-p1">
-                        My projects explore the foundations of computing — from building operating systems from scratch
-                        to creating compilers and emulators. I believe the
-                        best way to understand technology is to build it yourself.
+                    <p>
+                        Els meus projectes van del més baix nivell: sistemes operatius des de zero, compiladors,
+                        emuladors...
+                        Crec fermament que la millor manera d'entendre quelcom és construir-ho amb les teves pròpies
+                        mans.
                     </p>
-                    <p data-i18n="about-p2">
-                        Through these repositories, I aim to provide developers in training and curious minds with the
-                        kind of project examples I wish I had access to when I was studying. Many of these are ambitious
-                        undertakings that typically span several years and require teams of developers. With modern AI
-                        tools, I can tackle them with unprecedented speed and flexibility, making complex systems more
-                        accessible to learn from and build upon.
+                    <p>
+                        Amb aquests repositoris vull oferir a estudiants i curiosos el tipus d'exemples que a mi
+                        m'hauria encantat tenir quan estudiava. Són projectes ambiciosos que normalment
+                        requeririen anys i equips sencers. Gràcies a les eines d'IA actuals, puc abordar-los
+                        amb una agilitat impensable fa poc, fent que sistemes complexos estiguin a l'abast de
+                        qualsevol que vulgui aprendre.
                     </p>
-                    <p data-i18n="about-p3">
-                        All projects are thoroughly documented, and I continuously review and refine this documentation
-                        as it's being generated. This process ensures that I fully understand the inner workings of each
-                        project I create, while guaranteeing that the manuals provide the most detailed and unambiguous
-                        information possible. Clear documentation is not just for others — it's an essential part of my
-                        own learning journey.
+                    <p>
+                        Documento tot a consciència, revisant i polint la documentació mentre la genero.
+                        Així m'asseguro d'entendre cada racó del que creo, i que els manuals siguin el més
+                        clars i útils possible. Documentar bé no és només pels altres: és part fonamental
+                        del meu propi aprenentatge.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <span class="highlight-icon">🎯</span>
                             <div>
-                                <h4 data-i18n="highlight-1-title">Educational Focus</h4>
-                                <p data-i18n="highlight-1-desc">Projects designed to teach and inspire</p>
+                                <h4>Per aprendre</h4>
+                                <p>Projectes pensats per ensenyar</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-icon">🔧</span>
                             <div>
-                                <h4 data-i18n="highlight-2-title">Low-Level Expertise</h4>
-                                <p data-i18n="highlight-2-desc">From assembly to operating systems</p>
+                                <h4>A baix nivell</h4>
+                                <p>Des d'assemblador fins al kernel</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-icon">🌟</span>
                             <div>
-                                <h4 data-i18n="highlight-3-title">Open Source</h4>
-                                <p data-i18n="highlight-3-desc">All projects freely available</p>
+                                <h4>Codi obert</h4>
+                                <p>Tot disponible lliurement</p>
                             </div>
                         </div>
                     </div>
@@ -201,14 +198,14 @@
                         <div class="terminal-content">
                             <p><span class="prompt">$</span> whoami</p>
                             <p class="output">christian@cmelnulabs</p>
-                            <p><span class="prompt">$</span> cat interests.txt</p>
-                            <p class="output">Operating Systems</p>
-                            <p class="output">Compilers & Languages</p>
-                            <p class="output">Emulators</p>
+                            <p><span class="prompt">$</span> cat interessos.txt</p>
+                            <p class="output">Sistemes Operatius</p>
+                            <p class="output">Compiladors</p>
+                            <p class="output">Emuladors</p>
                             <p class="output">Machine Learning</p>
-                            <p class="output">Hardware Design</p>
-                            <p><span class="prompt">$</span> echo $MOTTO</p>
-                            <p class="output">"Build it to understand it"</p>
+                            <p class="output">Disseny de Hardware</p>
+                            <p><span class="prompt">$</span> echo $LEMA</p>
+                            <p class="output">"Construeix-ho per entendre-ho"</p>
                             <p><span class="prompt">$</span> <span class="cursor">_</span></p>
                         </div>
                     </div>
@@ -221,9 +218,9 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-i18n="projects-tag">Featured Work</span>
-                <h2 data-i18n="projects-title">Projects</h2>
-                <p data-i18n="projects-subtitle">Educational projects that scratch my own itch</p>
+                <span class="section-tag">Què faig</span>
+                <h2>Projectes</h2>
+                <p>Invents que em diverteixen i dels quals aprenc</p>
             </div>
             <div class="projects-grid">
                 <!-- ThunderOS -->
@@ -231,7 +228,7 @@
                     <div class="project-header">
                         <span class="project-status active">
                             <span class="status-dot"></span>
-                            <span data-i18n="status-active">Active Development</span>
+                            <span>En desenvolupament</span>
                         </span>
                         <div class="project-links">
                             <a href="https://github.com/cmelnulabs/thunderos" target="_blank" class="project-link">
@@ -243,15 +240,14 @@
                         </div>
                     </div>
                     <div class="project-icon">⚡</div>
-                    <h3 data-i18n="project-thunderos-title">ThunderOS</h3>
-                    <p data-i18n="project-thunderos-desc">A lightweight RISC-V operating system for educational use,
-                        providing a clean foundation for OS
-                        development and embedded systems experimentation.</p>
+                    <h3>ThunderOS</h3>
+                    <p>Un sistema operatiu lleuger per a RISC-V amb finalitat educativa. Una base neta per a qui vulgui
+                        ficar-se en desenvolupament de SO i sistemes encastats.</p>
                     <div class="project-features">
-                        <span class="feature">RISC-V Architecture</span>
-                        <span class="feature">Memory Management</span>
-                        <span class="feature">Process Scheduling</span>
-                        <span class="feature">UART Driver</span>
+                        <span class="feature">Arquitectura RISC-V</span>
+                        <span class="feature">Gestió de memòria</span>
+                        <span class="feature">Planificació de processos</span>
+                        <span class="feature">Driver UART</span>
                     </div>
                     <div class="project-tech">
                         <span class="tech-tag">C</span>
@@ -266,7 +262,7 @@
                     <div class="project-header">
                         <span class="project-status">
                             <span class="status-dot"></span>
-                            <span data-i18n="status-completed">Completed</span>
+                            <span>Completat</span>
                         </span>
                         <div class="project-links">
                             <a href="https://github.com/cmelnulabs/compi" target="_blank" class="project-link">
@@ -278,19 +274,18 @@
                         </div>
                     </div>
                     <div class="project-icon">🔄</div>
-                    <h3 data-i18n="project-compi-title">Compi</h3>
-                    <p data-i18n="project-compi-desc">A C-to-VHDL compiler that bridges software and hardware design,
-                        enabling rapid prototyping of
-                        hardware from high-level C code.</p>
+                    <h3>Compi</h3>
+                    <p>Un compilador de C a VHDL que uneix el món del software amb el del hardware. Ideal per a
+                        prototipar circuits a partir de codi d'alt nivell.</p>
                     <div class="project-features">
-                        <span class="feature">Lexer & Parser</span>
-                        <span class="feature">AST Generation</span>
-                        <span class="feature">VHDL Output</span>
+                        <span class="feature">Lexer i Parser</span>
+                        <span class="feature">Generació d'AST</span>
+                        <span class="feature">Sortida VHDL</span>
                     </div>
                     <div class="project-tech">
                         <span class="tech-tag">C</span>
                         <span class="tech-tag">VHDL</span>
-                        <span class="tech-tag">Compilers</span>
+                        <span class="tech-tag">Compiladors</span>
                     </div>
                 </article>
 
@@ -299,7 +294,7 @@
                     <div class="project-header">
                         <span class="project-status">
                             <span class="status-dot"></span>
-                            <span data-i18n="status-completed">Completed</span>
+                            <span>Completat</span>
                         </span>
                         <div class="project-links">
                             <a href="https://github.com/cmelnulabs/brain-tumor-classifier" target="_blank"
@@ -312,14 +307,13 @@
                         </div>
                     </div>
                     <div class="project-icon">🧠</div>
-                    <h3 data-i18n="project-brain-title">Brain Tumor Classifier</h3>
-                    <p data-i18n="project-brain-desc">A machine learning model that classifies MRI images of brain
-                        tumors by type, demonstrating
-                        practical applications of deep learning in healthcare.</p>
+                    <h3>Classificador de tumors cerebrals</h3>
+                    <p>Model de deep learning que classifica ressonàncies magnètiques de tumors cerebrals. Un exemple
+                        pràctic d'IA aplicada a la medicina.</p>
                     <div class="project-features">
-                        <span class="feature">CNN Architecture</span>
-                        <span class="feature">Image Classification</span>
-                        <span class="feature">Medical Imaging</span>
+                        <span class="feature">Arquitectura CNN</span>
+                        <span class="feature">Classificació d'imatges</span>
+                        <span class="feature">Imatge mèdica</span>
                     </div>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -333,7 +327,7 @@
                     <div class="project-header">
                         <span class="project-status fork">
                             <span class="status-dot"></span>
-                            <span data-i18n="status-fork">Fork</span>
+                            <span>Fork</span>
                         </span>
                         <div class="project-links">
                             <a href="https://github.com/cmelnulabs/libmigdb" target="_blank" class="project-link">
@@ -345,19 +339,18 @@
                         </div>
                     </div>
                     <div class="project-icon">🔍</div>
-                    <h3 data-i18n="project-libmigdb-title">libmigdb</h3>
-                    <p data-i18n="project-libmigdb-desc">GDB/Machine Interface library fork - A library for interfacing
-                        with GDB's machine interface for
-                        building debugger frontends.</p>
+                    <h3>libmigdb</h3>
+                    <p>Fork d'una biblioteca per comunicar-se amb GDB a través de la seva interfície màquina. Útil per
+                        construir eines de depuració.</p>
                     <div class="project-features">
-                        <span class="feature">GDB Integration</span>
-                        <span class="feature">MI Protocol</span>
-                        <span class="feature">Debugging Tools</span>
+                        <span class="feature">Integració amb GDB</span>
+                        <span class="feature">Protocol MI</span>
+                        <span class="feature">Eines de debug</span>
                     </div>
                     <div class="project-tech">
                         <span class="tech-tag">C</span>
                         <span class="tech-tag">GDB</span>
-                        <span class="tech-tag">Debugging</span>
+                        <span class="tech-tag">Depuració</span>
                     </div>
                 </article>
             </div>
@@ -368,13 +361,13 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-i18n="skills-tag">Expertise</span>
-                <h2 data-i18n="skills-title">Technical Skills</h2>
+                <span class="section-tag">Experiència</span>
+                <h2>Habilitats tècniques</h2>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
                     <div class="skill-icon">💻</div>
-                    <h3 data-i18n="skills-languages">Languages</h3>
+                    <h3>Llenguatges</h3>
                     <div class="skill-bars">
                         <div class="skill-item">
                             <span class="skill-name">C</span>
@@ -404,19 +397,19 @@
                 </div>
                 <div class="skill-category">
                     <div class="skill-icon">🔧</div>
-                    <h3 data-i18n="skills-systems">Systems</h3>
+                    <h3>Sistemes</h3>
                     <div class="skill-tags">
-                        <span data-i18n="skill-os">Operating Systems</span>
+                        <span>Sistemes operatius</span>
                         <span>RISC-V</span>
-                        <span data-i18n="skill-embedded">Embedded Systems</span>
-                        <span data-i18n="skill-memory">Memory Management</span>
-                        <span data-i18n="skill-drivers">Device Drivers</span>
+                        <span>Sistemes encastats</span>
+                        <span>Gestió de memòria</span>
+                        <span>Drivers</span>
                         <span>Bootloaders</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-icon">⚙️</div>
-                    <h3 data-i18n="skills-tools">Tools & Platforms</h3>
+                    <h3>Eines</h3>
                     <div class="skill-tags">
                         <span>GCC</span>
                         <span>GDB</span>
@@ -428,13 +421,13 @@
                 </div>
                 <div class="skill-category">
                     <div class="skill-icon">🧠</div>
-                    <h3>AI/ML</h3>
+                    <h3>IA/ML</h3>
                     <div class="skill-tags">
                         <span>TensorFlow</span>
                         <span>Deep Learning</span>
                         <span>CNNs</span>
-                        <span>Image Classification</span>
-                        <span>Computer Vision</span>
+                        <span>Classificació d'imatges</span>
+                        <span>Visió artificial</span>
                     </div>
                 </div>
             </div>
@@ -446,11 +439,10 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-text">
-                    <span class="section-tag" data-i18n="contact-tag">Get In Touch</span>
-                    <h2 data-i18n="contact-title">Let's Build Something</h2>
-                    <p data-i18n="contact-desc">Interested in collaborating on an open-source project or just want to
-                        chat about operating
-                        systems, compilers, or emulators? Feel free to reach out!</p>
+                    <span class="section-tag">Parlem</span>
+                    <h2>Fem un cafè?</h2>
+                    <p>T'interessa col·laborar en algun projecte o simplement vols parlar de sistemes operatius,
+                        compiladors o emuladors? Escriu-me sense compromís!</p>
                     <div class="contact-links">
                         <a href="https://github.com/cmelnulabs" target="_blank" class="contact-link">
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
@@ -473,7 +465,7 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                 <circle cx="12" cy="10" r="3" />
                             </svg>
-                            <span>Barcelona, Spain</span>
+                            <span>Barcelona, Catalunya</span>
                         </div>
                     </div>
                 </div>
@@ -487,7 +479,7 @@
                             </div>
                             ☕
                         </div>
-                        <p data-i18n="coffee-text">Fueled by coffee<br>& curiosity</p>
+                        <p>Funciono a base<br>de cafè i curiositat</p>
                     </div>
                 </div>
             </div>
@@ -502,21 +494,20 @@
                     <img src="https://github.com/cmelnulabs.png" alt="cmelnulabs avatar" class="logo-avatar">
                     <span>cmelnulabs</span>
                 </div>
-                <p class="footer-text" data-i18n="footer-text">Building educational projects that scratch my own itch.
-                </p>
+                <p class="footer-text">Creant projectes que em diverteixen i em fan aprendre.</p>
                 <div class="footer-links">
                     <a href="https://github.com/cmelnulabs" target="_blank">GitHub</a>
                     <span class="separator">•</span>
-                    <a href="#projects" data-i18n="nav-projects">Projects</a>
+                    <a href="#projects">Projectes</a>
                     <span class="separator">•</span>
-                    <a href="#about" data-i18n="nav-about">About</a>
+                    <a href="#about">Qui sóc</a>
                 </div>
-                <p class="copyright" data-i18n="copyright">© 2025 cmelnulabs. All rights reserved.</p>
+                <p class="copyright">© 2025 cmelnulabs. Tots els drets reservats.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
