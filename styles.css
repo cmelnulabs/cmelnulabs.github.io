@@ -311,6 +311,52 @@ body {
     transform: rotate(-90deg) scale(0);
 }
 
+/* Light theme - Better icon visibility in navbar */
+[data-theme="light"] .theme-toggle {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+    color: var(--accent-primary);
+}
+
+[data-theme="light"] .lang-btn {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .lang-btn svg {
+    opacity: 0.85;
+    stroke: var(--text-primary);
+}
+
+[data-theme="light"] .lang-btn:hover {
+    color: var(--accent-primary);
+}
+
+[data-theme="light"] .lang-btn:hover svg {
+    stroke: var(--accent-primary);
+}
+
+[data-theme="light"] .github-btn {
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .github-btn svg {
+    fill: var(--text-primary);
+}
+
+[data-theme="light"] .github-btn:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+[data-theme="light"] .github-btn:hover svg {
+    fill: white;
+}
+
 /* Language Selector - Minimal Design */
 .language-selector {
     position: relative;
