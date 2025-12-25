@@ -313,48 +313,64 @@ body {
 
 /* Light theme - Better icon visibility in navbar */
 [data-theme="light"] .theme-toggle {
-    color: var(--text-primary);
+    color: #1e293b;
+    background: rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .theme-toggle:hover {
-    color: var(--accent-primary);
+    color: #0369a1;
+    background: rgba(3, 105, 161, 0.15);
 }
 
 [data-theme="light"] .lang-btn {
-    color: var(--text-primary);
+    color: #1e293b;
+    background: rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .lang-btn svg {
-    opacity: 0.85;
-    stroke: var(--text-primary);
+    opacity: 1;
+    stroke: #1e293b;
 }
 
 [data-theme="light"] .lang-btn:hover {
-    color: var(--accent-primary);
+    color: #0369a1;
+    background: rgba(3, 105, 161, 0.15);
 }
 
 [data-theme="light"] .lang-btn:hover svg {
-    stroke: var(--accent-primary);
+    stroke: #0369a1;
 }
 
 [data-theme="light"] .github-btn {
-    color: var(--text-primary);
-    background: var(--bg-secondary);
-    border-color: rgba(0, 0, 0, 0.15);
+    color: #1e293b;
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="light"] .github-btn svg {
-    fill: var(--text-primary);
+    fill: #1e293b;
 }
 
 [data-theme="light"] .github-btn:hover {
-    background: var(--accent-primary);
+    background: #0369a1;
     color: white;
-    border-color: var(--accent-primary);
+    border-color: #0369a1;
 }
 
 [data-theme="light"] .github-btn:hover svg {
     fill: white;
+}
+
+[data-theme="light"] .nav-links a {
+    color: #334155;
+}
+
+[data-theme="light"] .nav-links a:hover {
+    color: #0369a1;
+}
+
+[data-theme="light"] .logo-text {
+    color: #0f172a;
 }
 
 /* Language Selector - Minimal Design */
