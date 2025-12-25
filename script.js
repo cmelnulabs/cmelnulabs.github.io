@@ -11,7 +11,57 @@ const translations = {
         'nav-skills': 'Skills',
         'nav-contact': 'Contact',
         'nav-github': 'GitHub',
-        // Add more translations as needed
+        'hero-badge': 'Open Source Developer',
+        'hero-title-1': 'Building',
+        'hero-title-2': 'Educational',
+        'hero-title-3': 'Projects That',
+        'hero-subtitle-1': 'Creating emulators, compilers, operating systems, and whatever sounds fun.',
+        'hero-subtitle-2': 'Powered by coffee and vibe coding',
+        'hero-cta-projects': 'Explore Projects',
+        'hero-cta-github': 'View GitHub',
+        'stat-repos': 'Public Repos',
+        'stat-followers': 'Followers',
+        'about-tag': 'About Me',
+        'about-title': 'The Developer Behind the Code',
+        'about-intro': "I'm <strong>Christian</strong>, a developer based in <span class=\"highlight\">Barcelona</span> who loves diving deep into how computers actually work.",
+        'about-p1': 'My projects explore the foundations of computing — from building operating systems from scratch to creating compilers and emulators. I believe the best way to understand technology is to build it yourself.',
+        'about-p2': 'Through these repositories, I aim to provide developers in training and curious minds with the kind of project examples I wish I had access to when I was studying. Many of these are ambitious undertakings that typically span several years and require teams of developers. With modern AI tools, I can tackle them with unprecedented speed and flexibility, making complex systems more accessible to learn from and build upon.',
+        'about-p3': "All projects are thoroughly documented, and I continuously review and refine this documentation as it's being generated. This process ensures that I fully understand the inner workings of each project I create, while guaranteeing that the manuals provide the most detailed and unambiguous information possible. Clear documentation is not just for others — it's an essential part of my own learning journey.",
+        'highlight-1-title': 'Educational Focus',
+        'highlight-1-desc': 'Projects designed to teach and inspire',
+        'highlight-2-title': 'Low-Level Expertise',
+        'highlight-2-desc': 'From assembly to operating systems',
+        'highlight-3-title': 'Open Source',
+        'highlight-3-desc': 'All projects freely available',
+        'projects-tag': 'Featured Work',
+        'projects-title': 'Projects',
+        'projects-subtitle': 'Educational projects that scratch my own itch',
+        'status-active': 'Active Development',
+        'status-completed': 'Completed',
+        'status-fork': 'Fork',
+        'project-thunderos-title': 'ThunderOS',
+        'project-thunderos-desc': 'A lightweight RISC-V operating system for educational use, providing a clean foundation for OS development and embedded systems experimentation.',
+        'project-compi-title': 'Compi',
+        'project-compi-desc': 'A C-to-VHDL compiler that bridges software and hardware design, enabling rapid prototyping of hardware from high-level C code.',
+        'project-brain-title': 'Brain Tumor Classifier',
+        'project-brain-desc': 'A machine learning model that classifies MRI images of brain tumors by type, demonstrating practical applications of deep learning in healthcare.',
+        'project-libmigdb-title': 'libmigdb',
+        'project-libmigdb-desc': "GDB/Machine Interface library fork - A library for interfacing with GDB's machine interface for building debugger frontends.",
+        'skills-tag': 'Expertise',
+        'skills-title': 'Technical Skills',
+        'skills-languages': 'Languages',
+        'skills-systems': 'Systems',
+        'skills-tools': 'Tools & Platforms',
+        'skill-os': 'Operating Systems',
+        'skill-embedded': 'Embedded Systems',
+        'skill-memory': 'Memory Management',
+        'skill-drivers': 'Device Drivers',
+        'contact-tag': 'Get In Touch',
+        'contact-title': "Let's Build Something",
+        'contact-desc': 'Interested in collaborating on an open-source project or just want to chat about operating systems, compilers, or emulators? Feel free to reach out!',
+        'coffee-text': 'Fueled by coffee<br>& curiosity',
+        'footer-text': 'Building educational projects that scratch my own itch.',
+        'copyright': '© 2025 cmelnulabs. All rights reserved.'
     },
     es: {
         'page-title': 'cmelnulabs - Proyectos Educativos y Código Abierto',
@@ -20,7 +70,57 @@ const translations = {
         'nav-skills': 'Habilidades',
         'nav-contact': 'Contacto',
         'nav-github': 'GitHub',
-        // Add more translations as needed
+        'hero-badge': 'Desarrollador Open Source',
+        'hero-title-1': 'Construyendo',
+        'hero-title-2': 'Proyectos',
+        'hero-title-3': 'Educativos Que',
+        'hero-subtitle-1': 'Creando emuladores, compiladores, sistemas operativos, y todo lo que suene divertido.',
+        'hero-subtitle-2': 'Impulsado por café y vibe coding',
+        'hero-cta-projects': 'Explorar Proyectos',
+        'hero-cta-github': 'Ver GitHub',
+        'stat-repos': 'Repos Públicos',
+        'stat-followers': 'Seguidores',
+        'about-tag': 'Sobre Mí',
+        'about-title': 'El Desarrollador Detrás del Código',
+        'about-intro': "Soy <strong>Christian</strong>, un desarrollador en <span class=\"highlight\">Barcelona</span> al que le encanta profundizar en cómo funcionan realmente los ordenadores.",
+        'about-p1': 'Mis proyectos exploran los fundamentos de la informática — desde construir sistemas operativos desde cero hasta crear compiladores y emuladores. Creo que la mejor manera de entender la tecnología es construirla tú mismo.',
+        'about-p2': 'A través de estos repositorios, pretendo proporcionar a desarrolladores en formación y mentes curiosas el tipo de ejemplos de proyectos que me hubiera gustado tener cuando estudiaba. Muchos de estos son proyectos ambiciosos que típicamente abarcan varios años y requieren equipos de desarrolladores. Con herramientas modernas de IA, puedo abordarlos con una velocidad y flexibilidad sin precedentes, haciendo sistemas complejos más accesibles para aprender y construir sobre ellos.',
+        'about-p3': 'Todos los proyectos están documentados a fondo, y reviso y refino continuamente esta documentación mientras se genera. Este proceso asegura que entiendo completamente el funcionamiento interno de cada proyecto que creo, garantizando que los manuales proporcionen la información más detallada y clara posible. La documentación clara no es solo para otros — es una parte esencial de mi propio viaje de aprendizaje.',
+        'highlight-1-title': 'Enfoque Educativo',
+        'highlight-1-desc': 'Proyectos diseñados para enseñar e inspirar',
+        'highlight-2-title': 'Experiencia Low-Level',
+        'highlight-2-desc': 'Desde ensamblador hasta sistemas operativos',
+        'highlight-3-title': 'Código Abierto',
+        'highlight-3-desc': 'Todos los proyectos disponibles gratuitamente',
+        'projects-tag': 'Trabajo Destacado',
+        'projects-title': 'Proyectos',
+        'projects-subtitle': 'Proyectos educativos que satisfacen mi propia curiosidad',
+        'status-active': 'En Desarrollo',
+        'status-completed': 'Completado',
+        'status-fork': 'Fork',
+        'project-thunderos-title': 'ThunderOS',
+        'project-thunderos-desc': 'Un sistema operativo RISC-V ligero para uso educativo, proporcionando una base limpia para el desarrollo de SO y la experimentación con sistemas embebidos.',
+        'project-compi-title': 'Compi',
+        'project-compi-desc': 'Un compilador de C a VHDL que conecta el diseño de software y hardware, permitiendo la creación rápida de prototipos de hardware desde código C de alto nivel.',
+        'project-brain-title': 'Clasificador de Tumores Cerebrales',
+        'project-brain-desc': 'Un modelo de machine learning que clasifica imágenes de resonancia magnética de tumores cerebrales por tipo, demostrando aplicaciones prácticas del deep learning en salud.',
+        'project-libmigdb-title': 'libmigdb',
+        'project-libmigdb-desc': 'Fork de biblioteca GDB/Machine Interface - Una biblioteca para interactuar con la interfaz de máquina de GDB para construir frontends de depurador.',
+        'skills-tag': 'Experiencia',
+        'skills-title': 'Habilidades Técnicas',
+        'skills-languages': 'Lenguajes',
+        'skills-systems': 'Sistemas',
+        'skills-tools': 'Herramientas y Plataformas',
+        'skill-os': 'Sistemas Operativos',
+        'skill-embedded': 'Sistemas Embebidos',
+        'skill-memory': 'Gestión de Memoria',
+        'skill-drivers': 'Controladores de Dispositivos',
+        'contact-tag': 'Contacto',
+        'contact-title': 'Construyamos Algo',
+        'contact-desc': '¿Interesado en colaborar en un proyecto de código abierto o simplemente quieres charlar sobre sistemas operativos, compiladores o emuladores? ¡No dudes en escribirme!',
+        'coffee-text': 'Impulsado por café<br>y curiosidad',
+        'footer-text': 'Construyendo proyectos educativos que satisfacen mi propia curiosidad.',
+        'copyright': '© 2025 cmelnulabs. Todos los derechos reservados.'
     },
     ca: {
         'page-title': 'cmelnulabs - Projectes Educatius i Codi Obert',
@@ -29,9 +129,68 @@ const translations = {
         'nav-skills': 'Habilitats',
         'nav-contact': 'Contacte',
         'nav-github': 'GitHub',
-        // Add more translations as needed
+        'hero-badge': 'Desenvolupador Open Source',
+        'hero-title-1': 'Construint',
+        'hero-title-2': 'Projectes',
+        'hero-title-3': 'Educatius Que',
+        'hero-subtitle-1': "Creant emuladors, compiladors, sistemes operatius, i tot el que soni divertit.",
+        'hero-subtitle-2': 'Impulsat per cafè i vibe coding',
+        'hero-cta-projects': 'Explorar Projectes',
+        'hero-cta-github': 'Veure GitHub',
+        'stat-repos': 'Repos Públics',
+        'stat-followers': 'Seguidors',
+        'about-tag': 'Sobre Mi',
+        'about-title': 'El Desenvolupador Darrere del Codi',
+        'about-intro': "Soc <strong>Christian</strong>, un desenvolupador a <span class=\"highlight\">Barcelona</span> a qui li encanta aprofundir en com funcionen realment els ordinadors.",
+        'about-p1': "Els meus projectes exploren els fonaments de la informàtica — des de construir sistemes operatius des de zero fins a crear compiladors i emuladors. Crec que la millor manera d'entendre la tecnologia és construir-la tu mateix.",
+        'about-p2': "A través d'aquests repositoris, pretenc proporcionar a desenvolupadors en formació i ments curioses el tipus d'exemples de projectes que m'hauria agradat tenir quan estudiava. Molts d'aquests són projectes ambiciosos que típicament abasten diversos anys i requereixen equips de desenvolupadors. Amb eines modernes d'IA, puc abordar-los amb una velocitat i flexibilitat sense precedents, fent sistemes complexos més accessibles per aprendre i construir sobre ells.",
+        'about-p3': "Tots els projectes estan documentats a fons, i reviso i refino contínuament aquesta documentació mentre es genera. Aquest procés assegura que entenc completament el funcionament intern de cada projecte que creo, garantint que els manuals proporcionin la informació més detallada i clara possible. La documentació clara no és només per als altres — és una part essencial del meu propi viatge d'aprenentatge.",
+        'highlight-1-title': 'Enfocament Educatiu',
+        'highlight-1-desc': 'Projectes dissenyats per ensenyar i inspirar',
+        'highlight-2-title': 'Experiència Low-Level',
+        'highlight-2-desc': 'Des de assemblador fins a sistemes operatius',
+        'highlight-3-title': 'Codi Obert',
+        'highlight-3-desc': 'Tots els projectes disponibles gratuïtament',
+        'projects-tag': 'Treball Destacat',
+        'projects-title': 'Projectes',
+        'projects-subtitle': 'Projectes educatius que satisfan la meva pròpia curiositat',
+        'status-active': 'En Desenvolupament',
+        'status-completed': 'Completat',
+        'status-fork': 'Fork',
+        'project-thunderos-title': 'ThunderOS',
+        'project-thunderos-desc': "Un sistema operatiu RISC-V lleuger per a ús educatiu, proporcionant una base neta per al desenvolupament de SO i l'experimentació amb sistemes encastats.",
+        'project-compi-title': 'Compi',
+        'project-compi-desc': "Un compilador de C a VHDL que connecta el disseny de software i hardware, permetent la creació ràpida de prototips de hardware des de codi C d'alt nivell.",
+        'project-brain-title': 'Classificador de Tumors Cerebrals',
+        'project-brain-desc': "Un model de machine learning que classifica imatges de ressonància magnètica de tumors cerebrals per tipus, demostrant aplicacions pràctiques del deep learning en salut.",
+        'project-libmigdb-title': 'libmigdb',
+        'project-libmigdb-desc': "Fork de biblioteca GDB/Machine Interface - Una biblioteca per interactuar amb la interfície de màquina de GDB per construir frontends de depurador.",
+        'skills-tag': 'Experiència',
+        'skills-title': 'Habilitats Tècniques',
+        'skills-languages': 'Llenguatges',
+        'skills-systems': 'Sistemes',
+        'skills-tools': 'Eines i Plataformes',
+        'skill-os': 'Sistemes Operatius',
+        'skill-embedded': 'Sistemes Encastats',
+        'skill-memory': 'Gestió de Memòria',
+        'skill-drivers': 'Controladors de Dispositius',
+        'contact-tag': 'Contacte',
+        'contact-title': 'Construïm Alguna Cosa',
+        'contact-desc': "Interessat en col·laborar en un projecte de codi obert o simplement vols xerrar sobre sistemes operatius, compiladors o emuladors? No dubtis a escriure'm!",
+        'coffee-text': 'Impulsat per cafè<br>i curiositat',
+        'footer-text': 'Construint projectes educatius que satisfan la meva pròpia curiositat.',
+        'copyright': '© 2025 cmelnulabs. Tots els drets reservats.'
     }
 };
+
+// Typewriter phrases per language
+const typewriterPhrases = {
+    en: ['Scratch My Itch', 'Teach & Inspire', 'Push Boundaries', 'Explore Systems', 'Build From Scratch'],
+    es: ['Satisfacen Mi Curiosidad', 'Enseñan e Inspiran', 'Rompen Límites', 'Exploran Sistemas', 'Se Construyen Desde Cero'],
+    ca: ['Satisfan La Meva Curiositat', 'Ensenyen i Inspiren', 'Trenquen Límits', 'Exploren Sistemes', 'Es Construeixen Des de Zero']
+};
+
+let currentLang = 'en';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all features
@@ -100,6 +259,9 @@ function setLanguage(lang) {
     const currentLangSpan = document.getElementById('currentLang');
     const langOptions = document.querySelectorAll('.lang-option');
 
+    // Update global language
+    currentLang = lang;
+
     // Update current language display
     currentLangSpan.textContent = lang.toUpperCase();
 
@@ -131,8 +293,9 @@ function translatePage(lang) {
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translation[key]) {
-            if (element.tagName === 'TITLE') {
-                element.textContent = translation[key];
+            // Handle HTML content (for elements with inline formatting)
+            if (translation[key].includes('<')) {
+                element.innerHTML = translation[key];
             } else {
                 element.textContent = translation[key];
             }
@@ -152,13 +315,6 @@ function translatePage(lang) {
 // Typewriter Effect
 function initTypewriter() {
     const typewriter = document.getElementById('typewriter');
-    const phrases = [
-        'Scratch My Itch',
-        'Teach & Inspire',
-        'Push Boundaries',
-        'Explore Systems',
-        'Build From Scratch'
-    ];
 
     let phraseIndex = 0;
     let charIndex = 0;
@@ -166,6 +322,7 @@ function initTypewriter() {
     let typingSpeed = 100;
 
     function type() {
+        const phrases = typewriterPhrases[currentLang] || typewriterPhrases['en'];
         const currentPhrase = phrases[phraseIndex];
 
         if (isDeleting) {
