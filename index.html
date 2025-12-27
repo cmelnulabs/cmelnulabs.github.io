@@ -112,10 +112,6 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">
-                <span class="pulse"></span>
-                <span data-i18n="hero-badge">Open Source Developer</span>
-            </div>
             <h1 class="hero-title">
                 <span data-i18n="hero-title-1">Building</span> <span class="gradient-text"
                     data-i18n="hero-title-2">Educational</span><br>
@@ -244,143 +240,108 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-i18n="projects-tag">Featured Work</span>
+                <span class="section-tag" data-i18n="projects-tag">Work in Progress</span>
                 <h2 data-i18n="projects-title">Projects</h2>
-                <p data-i18n="projects-subtitle">Educational projects that scratch my own itch</p>
+                <p data-i18n="projects-subtitle">All projects are currently in active development</p>
             </div>
-            <div class="projects-grid">
+            <div class="projects-list">
                 <!-- ThunderOS -->
-                <article class="project-card featured">
-                    <div class="project-header">
-                        <span class="project-status active">
-                            <span class="status-dot"></span>
-                            <span data-i18n="status-active">Active Development</span>
-                        </span>
-                        <div class="project-links">
-                            <a href="https://github.com/cmelnulabs/thunderos" target="_blank" class="project-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <article class="project-item">
+                    <div class="project-main">
+                        <div class="project-title-row">
+                            <span class="project-emoji">⚡</span>
+                            <h3 data-i18n="project-thunderos-title">ThunderOS</h3>
+                            <span class="project-badge dev" data-i18n="badge-dev">In Development</span>
+                        </div>
+                        <p class="project-desc" data-i18n="project-thunderos-desc">A lightweight RISC-V operating system for educational use, providing a clean foundation for OS development and embedded systems experimentation.</p>
+                        <div class="project-meta">
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Assembly</span>
+                                <span class="tech-tag">RISC-V</span>
+                            </div>
+                            <a href="https://github.com/cmelnulabs/thunderos" target="_blank" class="project-link-btn">
+                                <span>View on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
                                 </svg>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-icon">⚡</div>
-                    <h3 data-i18n="project-thunderos-title">ThunderOS</h3>
-                    <p data-i18n="project-thunderos-desc">A lightweight RISC-V operating system for educational use,
-                        providing a clean foundation for OS
-                        development and embedded systems experimentation.</p>
-                    <div class="project-features">
-                        <span class="feature">RISC-V Architecture</span>
-                        <span class="feature">Memory Management</span>
-                        <span class="feature">Process Scheduling</span>
-                        <span class="feature">UART Driver</span>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">C</span>
-                        <span class="tech-tag">Assembly</span>
-                        <span class="tech-tag">RISC-V</span>
-                        <span class="tech-tag">QEMU</span>
                     </div>
                 </article>
 
                 <!-- Compi -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-status">
-                            <span class="status-dot"></span>
-                            <span data-i18n="status-completed">Completed</span>
-                        </span>
-                        <div class="project-links">
-                            <a href="https://github.com/cmelnulabs/compi" target="_blank" class="project-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <article class="project-item">
+                    <div class="project-main">
+                        <div class="project-title-row">
+                            <span class="project-emoji">🔄</span>
+                            <h3 data-i18n="project-compi-title">Compi</h3>
+                            <span class="project-badge dev" data-i18n="badge-dev">In Development</span>
+                        </div>
+                        <p class="project-desc" data-i18n="project-compi-desc">A C-to-VHDL compiler that bridges software and hardware design, enabling rapid prototyping of hardware from high-level C code.</p>
+                        <div class="project-meta">
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">VHDL</span>
+                                <span class="tech-tag">Compilers</span>
+                            </div>
+                            <a href="https://github.com/cmelnulabs/compi" target="_blank" class="project-link-btn">
+                                <span>View on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
                                 </svg>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-icon">🔄</div>
-                    <h3 data-i18n="project-compi-title">Compi</h3>
-                    <p data-i18n="project-compi-desc">A C-to-VHDL compiler that bridges software and hardware design,
-                        enabling rapid prototyping of
-                        hardware from high-level C code.</p>
-                    <div class="project-features">
-                        <span class="feature">Lexer & Parser</span>
-                        <span class="feature">AST Generation</span>
-                        <span class="feature">VHDL Output</span>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">C</span>
-                        <span class="tech-tag">VHDL</span>
-                        <span class="tech-tag">Compilers</span>
                     </div>
                 </article>
 
                 <!-- Brain Tumor Classifier -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-status">
-                            <span class="status-dot"></span>
-                            <span data-i18n="status-completed">Completed</span>
-                        </span>
-                        <div class="project-links">
-                            <a href="https://github.com/cmelnulabs/brain-tumor-classifier" target="_blank"
-                                class="project-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <article class="project-item">
+                    <div class="project-main">
+                        <div class="project-title-row">
+                            <span class="project-emoji">🧠</span>
+                            <h3 data-i18n="project-brain-title">Brain Tumor Classifier</h3>
+                            <span class="project-badge dev" data-i18n="badge-dev">In Development</span>
+                        </div>
+                        <p class="project-desc" data-i18n="project-brain-desc">A machine learning model that classifies MRI images of brain tumors by type, demonstrating practical applications of deep learning in healthcare.</p>
+                        <div class="project-meta">
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Deep Learning</span>
+                            </div>
+                            <a href="https://github.com/cmelnulabs/brain-tumor-classifier" target="_blank" class="project-link-btn">
+                                <span>View on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
                                 </svg>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-icon">🧠</div>
-                    <h3 data-i18n="project-brain-title">Brain Tumor Classifier</h3>
-                    <p data-i18n="project-brain-desc">A machine learning model that classifies MRI images of brain
-                        tumors by type, demonstrating
-                        practical applications of deep learning in healthcare.</p>
-                    <div class="project-features">
-                        <span class="feature">CNN Architecture</span>
-                        <span class="feature">Image Classification</span>
-                        <span class="feature">Medical Imaging</span>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Deep Learning</span>
                     </div>
                 </article>
 
                 <!-- libmigdb -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-status fork">
-                            <span class="status-dot"></span>
-                            <span data-i18n="status-fork">Fork</span>
-                        </span>
-                        <div class="project-links">
-                            <a href="https://github.com/cmelnulabs/libmigdb" target="_blank" class="project-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <article class="project-item">
+                    <div class="project-main">
+                        <div class="project-title-row">
+                            <span class="project-emoji">🔍</span>
+                            <h3 data-i18n="project-libmigdb-title">libmigdb</h3>
+                            <span class="project-badge dev" data-i18n="badge-dev">In Development</span>
+                        </div>
+                        <p class="project-desc" data-i18n="project-libmigdb-desc">GDB/Machine Interface library fork - A library for interfacing with GDB's machine interface. I used it on my bachelor's thesis. Useful for building debugger frontends.</p>
+                        <div class="project-meta">
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">GDB</span>
+                                <span class="tech-tag">Debugging</span>
+                            </div>
+                            <a href="https://github.com/cmelnulabs/libmigdb" target="_blank" class="project-link-btn">
+                                <span>View on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
                                 </svg>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-icon">🔍</div>
-                    <h3 data-i18n="project-libmigdb-title">libmigdb</h3>
-                    <p data-i18n="project-libmigdb-desc">GDB/Machine Interface library fork - A library for interfacing
-                        with GDB's machine interface. I used it on my bachelor's thesis. Useful for building debugger
-                        frontends.</p>
-                    <div class="project-features">
-                        <span class="feature">GDB Integration</span>
-                        <span class="feature">MI Protocol</span>
-                        <span class="feature">Debugging Tools</span>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">C</span>
-                        <span class="tech-tag">GDB</span>
-                        <span class="tech-tag">Debugging</span>
                     </div>
                 </article>
             </div>
